@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>encriptado/desencriptado</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1><img src="img/Logo.png" alt="Logo"></h1>
+    </header>
+    <main>
+        <div class="container">
+            <section class="section">
+                <form action="">
+                    <label class="contenido2" for="encriptador">Ingresa Texto a Encriptador</label>
+                    <!--<input class="contenido2" type="text" name="encriptador" id="inpText">-->
+                    <textarea id="inpText" cols="70" rows="10" class="input-padron" required placeholder="Ingrese Texto a Encriptar"></textarea>
+        
+                    <label class="contenido2">Solo letras minúsculas y sin acentos</label>
+                    <div class="btnClass">
+                        <input class="botones" type="button" value="Encriptar" onclick="encryptText()">
+                        <input class="botones" type="button" value="Desencriptar" onclick="desincriptar()">
+                    </div>
+                    
+                </form>
+            </section>
+            <section class="section">
+                <div class="mensajeEn">
+                    <img src="img/Muñeco.png" alt="">
+                    <textarea id="textAreaOut" cols="70" rows="10" class="input-padron" required placeholder="Ingrese Texto a Encriptar"></textarea>
+                    <input class="botones" type="button" value="Copiar" onclick="copiar()" id="copiar">
+                    
+                </div>
+
+            </section>
+        </div>
+        
+       
+    </main>
+    <footer>
+        
+    </footer>
+    
+    <script src="js/encript.js"></script>
+</body>
+</html>
